@@ -15,10 +15,10 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-<BrowserRouter>
+<BrowserRouter basename="/gpc-test">
     
    <Routes>
-    <Route path="/" element={<Home/>}></Route>
+    <Route path="/gpc-test" element={<Home/>}></Route>
     <Route path="/About" element={<About/>}></Route>
     <Route path="/Contact" element={<Contact/>}></Route>
     <Route path="/Fungicides" element={<Fungicides/>}></Route>
