@@ -16,7 +16,7 @@ import { HashRouter } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-<HashRouter basename="/">
+<BrowserRouter basename="/">
     
    <Routes>
     <Route  path='/' element={<Home/>}></Route>
@@ -28,7 +28,7 @@ function App() {
    </Routes>
    
     <Footer/>
-    </HashRouter>
+    </BrowserRouter>
     </div>
   );
 }
