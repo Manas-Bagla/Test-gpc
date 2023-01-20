@@ -10,15 +10,16 @@ import Fungicides from './Pages/Fungicides.js';
 import Insecticides from './Pages/Insecticides.js';
 import Herbicides from './Pages/Herbicides.js';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-<BrowserRouter basename="/gpc-test">
+<HashRouter basename="/gpc-test">
     
    <Routes>
-    <Route path="/gpc-test" element={<Home/>}></Route>
+    <Route  path='/gpc-test' element={<Home/>}></Route>
     <Route path="/About" element={<About/>}></Route>
     <Route path="/Contact" element={<Contact/>}></Route>
     <Route path="/Fungicides" element={<Fungicides/>}></Route>
@@ -27,7 +28,7 @@ function App() {
    </Routes>
    
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     </div>
   );
 }
