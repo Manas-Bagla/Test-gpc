@@ -16,10 +16,10 @@ import { HashRouter } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-<HashRouter basename="/gpc-test">
+<HashRouter>
     
    <Routes>
-    <Route  path='/gpc-test' element={<Home/>}></Route>
+    <Route  path='/' element={<Home/>}></Route>
     <Route path="/About" element={<About/>}></Route>
     <Route path="/Contact" element={<Contact/>}></Route>
     <Route path="/Fungicides" element={<Fungicides/>}></Route>
